@@ -86,10 +86,10 @@ var slidemote = (function(){
 					if(/goto/.test(data.code)){	
 
 						arg = parseInt(data.code,10);
-						data.code = "gotoSlide";
+						data.code = "goto";
 					}
 
-					window.slidedeck[data.code](arg);
+					window.slidedeck[data.code + 'Slide'](arg);
 				}//end
 
 				//Flowtime
